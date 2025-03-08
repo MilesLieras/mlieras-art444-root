@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+    font-family: "be vietnam pro", "bebas neue";
+    font-weight: 700;
+    color:#2C0F0F;
+    text-transform:capitalize;
+}
+
+body {
+    background-color:#FFEDCF
+    
+} 
+
+.navigation{
+    
+    background-color: #DEB89B;
+    text-align: right;
+    width:100%
+}
+
+.intro{
+    width:40%;
+}
+
+
+.about{
+width: 560px;
+height:70%;
+}
+
+.pictures{
+   text-align: center;
+}
+
+h1{
+    padding-left: 50px;
+    font: "bebas nue";
+    font-size: 100px;
+}
+
+h2{
+    width: 30%;
+    padding-left:50px;
+    background-color:#DEB89B;
+    font-size: 40px;
+    font: "be vietnam pro"
+
+}
+p{
+   padding-left: 50px;
+    font-size: 20px;
+    font: "be vietnam pro"
+
+}
+
+.footer{
+   padding-bottom: 300px;
+   background-color: #DEB89B;
+}
