@@ -1,9 +1,28 @@
 html {
     scroll-behavior: smooth;
-    font-family: "be vietnam pro", "bebas neue";
+    font-family: "Bebas Neue", "Be Vietnam Pro";
     font-weight: 700;
     color:#2C0F0F;
     text-transform:capitalize;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+
+.be-vietnam-pro-regular {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+img{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 body {
@@ -12,16 +31,30 @@ body {
 } 
 
 .navigation{
-    
+    display: flex;
     background-color: #DEB89B;
-    text-align: right;
-    width:100%
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .intro{
-    width:40%;
+    padding-top: 100px;
+    width:100%;
+    display: flex;
+    justify-content: space-between
+
+    
+    
 }
 
+.icons{
+ text-align: left;
+ padding-bottom: 50px;
+ 
+}
 
 .about{
 width: 560px;
@@ -29,31 +62,46 @@ height:70%;
 }
 
 .pictures{
-   text-align: center;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 2000px;
 }
 
 h1{
+
     padding-left: 50px;
-    font: "bebas nue";
+    font: "bebas-neue";
     font-size: 100px;
 }
 
 h2{
     width: 30%;
-    padding-left:50px;
+    padding-left:100px;
     background-color:#DEB89B;
     font-size: 40px;
-    font: "be vietnam pro"
+    font: "bebas neue"
+
 
 }
 p{
    padding-left: 50px;
     font-size: 20px;
-    font: "be vietnam pro"
+    font-family: "Be Vietnam Pro"
+
 
 }
 
 .footer{
-   padding-bottom: 300px;
+   padding-top: 25px;
+    padding-bottom: 25px;
    background-color: #DEB89B;
+   text-align: center;
+
 }
