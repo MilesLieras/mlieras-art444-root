@@ -1,10 +1,62 @@
 /* TABLET VIEW */
 @media only screen and (max-width:992px) {
+       
+    .flex-container{
+
+     flex-direction: column; 
+    
+    }
 
 }
-
+h1{
+    padding-left: 50px;
+    font: "bebas-neue";
+    font-size: 50px;
+}
+img{
+    width:50%;
+    height:auto;
+}
+.icons{
+    width:50%;
+    height:auto;
+}
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {
   
+}
+.flex-container {
+    flex-direction: column;
+  }
+
+h1{
+    text-align: center;
+    font: "bebas-neue";
+    font-size: 50px; 
+}
+
+h2{
+    width: 50%;
+    text-align: center;
+    background-color:#DEB89B;
+    font-size: 30px;
+    font-family: "bebas neue"
+}
+
+.icons{
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Be Vietnam Pro"
+}
+
+.pictures{
+    display: block;
+  align-items: center;
+    
 }
