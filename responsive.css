@@ -54,6 +54,14 @@ img{
     align-items: center;
 }
 
+.faq{
+    margin: auto;
+    width: 100%;
+    justify-content: center; 
+    text-align: center; 
+    padding-bottom: 50px;
+}
+
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {
   
@@ -76,20 +84,22 @@ h2{
     font-size: 15px;
     font-family: "bebas neue"
 }
-
+.navigation {
+    display: flex;
+  flex-direction: row;
+    align-items: center;
+    border-style: solid;
+    border-color: #DEB89B;
+    background-color: #DEB89B;
+    font-size: 0;
+}
 .navigation{
     align-items: center;
     display: flex;
     flex-direction: row;
 }
 
-.faq{
-    margin: auto;
-    width: 100%;
-    justify-content: center; 
-    text-align: center; 
-    padding-bottom: 250px;
-}
+
 
 
 
