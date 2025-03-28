@@ -79,6 +79,8 @@ nav{
     flex-wrap: wrap; 
     align-items: center; 
     padding-right:20px;
+    color:#2C0F0F;
+
 }
 
 .intro{
@@ -89,6 +91,7 @@ nav{
     padding-bottom: 100px;
     padding-left:20px; 
     padding-right:20px;
+    max-height: 20%;
 }
 #skills{
     margin: auto;
