@@ -8,10 +8,8 @@
     }
 
 }
-h1{
-    font: "bebas-neue";
-    font-size: 75px;
-}
+
+
 .navigation {
     display: flex;
   flex-direction: row;
@@ -21,6 +19,8 @@ h1{
     background-color: #DEB89B;
 
 }
+
+
 
 .intro{
 align-items: center;
@@ -63,6 +63,15 @@ img{
 }
 
 /* MOBILE VIEW */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
 @media only screen and (max-width: 478px) {
   
 }
@@ -73,7 +82,7 @@ img{
 h1{
     text-align: center;
     font: "bebas-neue";
-    font-size: 25px; 
+    font-size: 50px; 
 
 }
 
@@ -97,15 +106,26 @@ h2{
     align-items: center;
     display: flex;
     flex-direction: row;
+    
 }
 
+.menu-toggle {
+   display: flex;
+ }
 
+nav{
+    display:none;
+    flex-direction: column;
+}
 
+nav.show-menu{
+    display:flex;
 
+}
 
 .icons{
     text-align: center;
-    width: 50%;
+    width: 35%;
     height: auto;
 }
 p{
@@ -118,3 +138,14 @@ p{
   align-items: center;
     
 }
+
+.show-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #2C0F0F;
+    flex-direction: column;
+    text-align: center;
+  }
