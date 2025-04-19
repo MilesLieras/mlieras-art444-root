@@ -179,32 +179,3 @@ nav{
 
 }
 
-/*.button{
-    padding: 24px 16px;
-    background-color: blue;
-    font-size: 32px;
-    border-radius: 32px;
-    margin: 200px auto;
-    display: block;
-    max-width: 300px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    transition-property: all;
-    transition-duration: 0.2ms;
-
-
-}
-.button:hover{
-    background-color: yellow;
-    color:black;
-    cursor: crosshair;
-}
-
-.button:visited {
-    background-color:purple;
-    
-}
-.button:active {
-    background-color: red;
-}*/
