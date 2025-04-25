@@ -64,6 +64,12 @@ img{
 
 /* MOBILE VIEW */
 
+
+
+@media only screen and (max-width: 478px) {
+  
+}
+
 .menu-toggle {
     display: none;
     background: none;
@@ -72,9 +78,7 @@ img{
     cursor: pointer;
   }
 
-@media only screen and (max-width: 478px) {
-  
-}
+
 .flex-container {
     flex-direction: column;
   }
@@ -113,15 +117,29 @@ h2{
    display: flex;
  }
 
+ 
 nav{
     display:none;
-    flex-direction: column;
+    position: absolute;
+    top: -200px;
+
 }
 
 nav.show-menu{
-    display:flex;
-
+    display: block;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #DEB89B;
+    flex-direction: column;
+    text-align: center;
+    transition: all 1s;
 }
+
+nav.show-menu a {
+    color: white;
+    text-decoration: none;
+  }
 
 .icons{
     text-align: center;
@@ -138,14 +156,3 @@ p{
   align-items: center;
     
 }
-
-.show-menu {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #2C0F0F;
-    flex-direction: column;
-    text-align: center;
-  }

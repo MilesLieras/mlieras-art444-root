@@ -4,3 +4,4 @@ const nav = document.getElementById('mobile-nav');
 menuToggle.addEventListener('click', () => {
   nav.classList.toggle('show-menu');
 });
+

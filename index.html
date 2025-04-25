@@ -23,7 +23,7 @@
   <span class="bar"></span>
   <span class="bar"></span>
 </button>
-   <nav>
+   <nav id="mobile-nav">
       <a href="#about"><p>About</p></a>
       <a href="#skills"><p>Skills</p></a>
       <a href="#gallery"><p>Work</p></a>
@@ -33,15 +33,18 @@
  </div>
 </section>
 
+<button id="theme-toggle">Toggle Dark Mode</button>
 
 <!-- MAIN HEADER --> 
   <section id="header" class="header">
     <div class="intro">
-      <h1>Hello my name is Miles Lieras</h1>
+      <div class=hello>
+        <h4>Hello!</h4>
+        <h4>My Name Is</h4>
+        <h1>Miles Lieras</h1>
+      </div>
 
-
-      <img src="Images/me.jpeg" width="540" height="360">
-      
+    <img src="Images/me.jpeg" width="540" height="360">
       
     </div>
   </section>
@@ -114,23 +117,7 @@
   </div>
 </footer>
 
-<script src="js/script.js"></script>
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const nav = document.getElementById('mobile-nav');
-
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('show-menu');
-  });
-
-  // Optional: Hide menu when a nav link is clicked
-  const navLinks = nav.querySelectorAll('a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('show-menu');
-    });
-  });
-</script>
+<script src="JS/script.js"></script>
 
 </body>
 

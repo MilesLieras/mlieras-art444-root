@@ -10,6 +10,7 @@ body{
     margin:0;
     padding:0;
 }
+
 h1{
 
    
@@ -42,6 +43,15 @@ h3 {
     padding-right:100px;
 }
 
+h4{
+    font: "bebas-neue";
+    font-size: 35px;
+    text-align:left;
+    margin-left:0;
+    width:auto;
+    padding-right:100px;
+}
+
 
 p {
     width: 80%; 
@@ -66,7 +76,10 @@ body {
     background-color:#FFEDCF
     
 } 
+.theme-toggle{
+    background-color: #DEB89B;
 
+}
 .navigation {
     display: flex;
     justify-content: center; 
@@ -116,6 +129,7 @@ nav{
     padding-right:40px;
     max-height: 20%;
 }
+
 #skills{
     margin: auto;
   width: 75%;
@@ -178,4 +192,3 @@ nav{
    text-align: center;
 
 }
-
