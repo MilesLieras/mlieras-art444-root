@@ -78,10 +78,35 @@ body {
 } 
 
 /* Dark theme */
+
+body.dark-mode .navigation{
+
+background-color: #221610;
+border-color:#221610;
+}
+
+
 body.dark-mode {
     background-color: #392E29;
-    color: #DEB89B;
+    color: #FFEDCF;
   }
+
+body.dark-mode p{
+    color:#FFEDCF;
+}
+
+body.dark-mode h2{
+    background-color: #221610;
+    border-color: #221610;
+    color:#FFEDCF;
+}
+
+body.dark-mode .footer{
+    background-color: #221610;
+    border-color: #221610;
+}
+
+
 
 
 
