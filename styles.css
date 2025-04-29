@@ -76,6 +76,15 @@ body {
     background-color:#FFEDCF
     
 } 
+
+/* Dark theme */
+body.dark-mode {
+    background-color: #392E29;
+    color: #DEB89B;
+  }
+
+
+
 .theme-toggle{
     background-color: #DEB89B;
 
@@ -128,6 +137,10 @@ nav{
     padding-left:40px; 
     padding-right:40px;
     max-height: 20%;
+}
+
+.hello{
+    line-height: -1;
 }
 
 #skills{
