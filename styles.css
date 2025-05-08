@@ -77,6 +77,38 @@ body {
     
 } 
 
+#theme-toggle {
+    background-color: #DEB89B;
+    padding: 10px 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  /* On hover */
+  #theme-toggle:hover {
+    background-color: #CFA88D;
+    color: #1C0A0A;
+  }
+  
+  /* Dark mode button appearance */
+  body.dark-mode #theme-toggle {
+    background-color: #221610;
+    color: #FFEDCF;
+    border: 2px solid #FFEDCF;
+  }
+  
+  body.dark-mode #theme-toggle:hover {
+    background-color: #2F211C;
+    color: #FFEDCF;
+  }
+
+
 /* Dark theme */
 
 body.dark-mode .navigation{
@@ -113,7 +145,10 @@ body.dark-mode .footer{
 .theme-toggle{
     background-color: #DEB89B;
 
+
 }
+
+
 .navigation {
     display: flex;
     justify-content: center; 
