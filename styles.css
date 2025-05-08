@@ -78,36 +78,35 @@ body {
 } 
 
 #theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
     background-color: #DEB89B;
     padding: 10px 20px;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
-    border-radius: 12px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 10px auto;
-    display: block;
+    z-index: 1000;
+    transition: 0.3s ease, color 0.3s ease;
   }
   
-  /* On hover */
+  /* Hover state */
   #theme-toggle:hover {
     background-color: #CFA88D;
-    color: #1C0A0A;
   }
   
-  /* Dark mode button appearance */
+  /* Dark mode style */
   body.dark-mode #theme-toggle {
     background-color: #221610;
     color: #FFEDCF;
-    border: 2px solid #FFEDCF;
   }
   
   body.dark-mode #theme-toggle:hover {
     background-color: #2F211C;
     color: #FFEDCF;
   }
-
 
 /* Dark theme */
 
