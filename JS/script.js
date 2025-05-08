@@ -11,27 +11,26 @@ toggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
 
-  let slideIndex = 0;
-  const slides = document.querySelectorAll(".slide");
-  const showSlide = (index) => {
-    slides.forEach((slide, i) => {
-      slide.classList.remove("active");
-      if (i === index) slide.classList.add("active");
-    });
-  };
+let slideIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const track = document.querySelector('.slides-track');
+  const totalSlides = slides.length;
 
-  const nextSlide = () => {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlide(slideIndex);
-  };
+  function updateSlidePosition() {
+    const slideWidth = slides[0].clientWidth;
+    track.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+  }
 
-  const prevSlide = () => {
-    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-    showSlide(slideIndex);
-  };
+  document.querySelector('.next').addEventListener('click', () => {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    updateSlidePosition();
+  });
 
-  document.querySelector(".next").addEventListener("click", nextSlide);
-  document.querySelector(".prev").addEventListener("click", prevSlide);
+  document.querySelector('.prev').addEventListener('click', () => {
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+  });
 
-  // Initialize
-  showSlide(slideIndex);
+  window.addEventListener('resize', updateSlidePosition); // Recalc on resize
+
+  updateSlidePosition(); 

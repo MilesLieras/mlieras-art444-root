@@ -235,42 +235,48 @@ nav{
 }
 .slideshow-container {
     position: relative;
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 3 / 2;
     margin: auto;
     overflow: hidden;
   }
   
-  .slide {
-    display: none;
+  .slides-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
     width: 100%;
-    max-width: 600px; 
-    max-height: 400px; 
-    margin: 0 auto;
-    object-fit: contain;
-    border-radius: 12px;
+    height: 100%;
   }
   
-  .slide.active {
+  .slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
     display: block;
   }
-
+  
+  /* Navigation buttons */
   .prev, .next {
-    cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 12px;
+    font-size: 24px;
     color: #DEB89B;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    font-size: 24px;
     border-radius: 50%;
+    cursor: pointer;
     user-select: none;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
   }
   
   .prev {
@@ -280,11 +286,6 @@ nav{
   .next {
     right: 20px;
   }
-/*.pictures{
-   width: 100%;
-   align-items: center;
-   justify-content: center;
-}*/
 
 #faq {
     margin: auto;
