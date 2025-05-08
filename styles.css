@@ -190,6 +190,7 @@ nav{
 .intro{
     padding-top: 100px;
     width:100%;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
