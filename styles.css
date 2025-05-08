@@ -233,11 +233,58 @@ nav{
     width:100%;
     
 }
-.pictures{
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    max-width: 600px; 
+    max-height: 400px; 
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    color: #DEB89B;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 24px;
+    border-radius: 50%;
+    user-select: none;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+/*.pictures{
    width: 100%;
    align-items: center;
    justify-content: center;
-}
+}*/
 
 #faq {
     margin: auto;
