@@ -14,23 +14,21 @@ toggle.addEventListener('click', () => {
 let slideIndex = 0;
   const slides = document.querySelectorAll('.slide');
   const track = document.querySelector('.slides-track');
-  const totalSlides = slides.length;
 
   function updateSlidePosition() {
-    const slideWidth = slides[0].clientWidth;
+    const slideWidth = slides[0].getBoundingClientRect().width;
     track.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
   }
 
   document.querySelector('.next').addEventListener('click', () => {
-    slideIndex = (slideIndex + 1) % totalSlides;
+    slideIndex = (slideIndex + 1) % slides.length;
     updateSlidePosition();
   });
 
   document.querySelector('.prev').addEventListener('click', () => {
-    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
     updateSlidePosition();
   });
 
-  window.addEventListener('resize', updateSlidePosition); // Recalc on resize
-
-  updateSlidePosition(); 
+  window.addEventListener('resize', updateSlidePosition);
+  window.addEventListener('load', updateSlidePosition);
