@@ -187,8 +187,16 @@ nav{
     border-radius: 2px;
   }
   
-  
-.intro{
+  .intro {
+    padding: 0 20px; /* Left and right padding */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Optional spacing between text and image */
+    margin-top: 75px;
+  }
+/*.intro{
     padding-top: 100px;
     width:100%;
     height: 200px;
@@ -198,10 +206,11 @@ nav{
     padding-left:40px; 
     padding-right:40px;
     max-height: 20%;
-}
+}*/
+
 
 .hello{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 #skills{
