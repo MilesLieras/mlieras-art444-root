@@ -50,6 +50,7 @@ h4{
     margin-left:0;
     width:auto;
     padding-right:100px;
+
 }
 
 
@@ -199,9 +200,6 @@ nav{
     max-height: 20%;
 }
 
-.hello{
-    line-height: -1;
-}
 
 #skills{
     margin: auto;
